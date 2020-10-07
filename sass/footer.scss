@@ -1,0 +1,64 @@
+@use 'variables' as vars;
+footer.site-footer {
+    margin: 0 auto;
+    width: vars.$content-width;
+  
+    div.site-info {
+      width: 100%;
+      padding: 3em 0;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      font-family: vars.$font-family;
+      font-weight: normal;
+      border-bottom: vars.$border;
+  
+      span.title {
+        font-size: 25px;
+        color: #62585f;
+        text-shadow: 2px 2px #fff;
+      }
+  
+      p.description {
+        font-size: 14px;
+        color: #62585f;
+        line-height: 21px;
+        margin: 0.8em 0;
+  
+        span.email {
+          color: #ef4634;
+        }
+      }
+  
+      div.site-footer-text {
+        a.read-more {
+          font-size: 14px;
+          color: #ef4634;
+        }
+      }
+  
+      div.contact-detail {
+        margin-left: 10%;
+      }
+    }
+  
+    div.copyright-div {
+      margin: 1em 0;
+      font-family: vars.$font-family;
+      font-weight: normal;
+      font-size: 14px;
+      color: #62585f;
+      width: 100%;
+      text-align: center;
+  
+      a.copyright-rtcamp {
+        color: #ef4634;
+      }
+    }
+    .social-links{
+        display: flex;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+  }

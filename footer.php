@@ -13,20 +13,30 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'designfly' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'designfly' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'designfly' ), 'designfly', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		<div class="site-footer-text">
+				<span class="title"><?php echo esc_html__( "Welcome to D'SIGNfly", 'designfly' ); ?></span>
+				<p class="description"><?php echo esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'designfly' ); ?></p>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="read-more"><?php echo esc_html__( 'Read more', 'designfly' ); ?></a>
+			</div>
+			<div class="contact-detail">
+				<span class="title"><?php echo esc_html__( 'Contact Us', 'designfly' ); ?></span>
+				<p class="description">
+					<?php echo esc_html__( 'Street 21 Planet, A-11, dapibus tristique. 123 551', 'designfly' ); ?><br/>
+					<?php echo esc_html__( 'Tel: 123 4567890; Fax: 123 456789', 'designfly' ); ?><br/>
+					<?php echo esc_html__( 'Email: ', 'designfly' ); ?><span class="email"><?php echo esc_html( 'contactus@designfly.com' ); ?></span>
+				</p>
+					<div class="social-links">
+						<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/facebook-cropped.png' ); ?>"></a>
+						<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/google-cropped.png' ); ?>"></a>
+						<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/linkedin-cropped.png' ); ?>"></a>
+						<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/pinterest-cropped.png' ); ?>"></a>
+						<a href="#"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/twitter-cropped.png' ); ?>"></a>
+					</div>
+				
+			</div>
+		</div>
+	</footer>
+</div>
 
 <?php wp_footer(); ?>
 
