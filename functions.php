@@ -78,7 +78,7 @@ if ( ! function_exists( 'designfly_setup' ) ) :
 				'designfly_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
-					'default-image' => '',
+					'default-image' => get_template_directory_uri() . '/images/rapeatable-bg.png',
 				)
 			)
 		);
@@ -141,6 +141,7 @@ add_action( 'widgets_init', 'designfly_widgets_init' );
  */
 function designfly_scripts() {
 	wp_enqueue_style( 'designfly-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'designfly-theme', get_template_directory_uri() . '/style.css', array(), '1.0' );
 	wp_style_add_data( 'designfly-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'designfly-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
