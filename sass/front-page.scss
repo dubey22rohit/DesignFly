@@ -1,0 +1,37 @@
+@use 'variables' as vars;
+
+div.front-header {
+  height: 544px;
+  width: 100%;
+  text-align: center;
+  background-color: #e73d2d;
+  margin-bottom: 3px;
+
+  & > img {
+    height: 100%;
+  }
+
+  & > div.text-block {
+    position: relative;
+    top: -44%;
+
+    div {
+      font-family: vars.$font-family;
+      font-weight: bold;
+      font-size: 70px;
+      color: #fff;
+      text-shadow: 2px 2px #950904;
+    }
+
+    p {
+      font-family: vars.$font-family;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+      padding-top: 10px;
+      width: 45%;
+      margin: auto;
+    }
+  }
+}

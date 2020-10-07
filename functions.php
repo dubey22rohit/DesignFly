@@ -179,3 +179,51 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function custom_portfolio_post(){
+	$labels = array(
+		'name'                     => _x( 'Portfolios', 'Post Type General Name', 'designfly' ),
+		'singular_name'            => _x( 'Portfolio', 'Post Type Sigular Name', 'designfly' ),
+		'add_new'                  => _x( 'Add New Image', 'Add New', 'designfly' ),
+		'add_new_item'             => __( 'Add New Portfolio', 'designfly' ),
+		'all_items'                => __( 'All Portfolios', 'designfly' ),
+		'new_item'                 => __( 'New Portfolio', 'designfly' ),
+		'view_items'               => __( 'View Portfolios', 'designfly' ),
+		'view_item'                => __( 'View Portfolio', 'designfly' ),
+		'edit_item'                => __( 'Edit Portfolio', 'designfly' ),
+		'search_items'             => __( 'Search Portfolios', 'designfly' ),
+		'not_found'                => __( 'No portfolios found.', 'designfly' ),
+		'not_found_in_trash'       => __( 'No portfolios found in Trash.', 'designfly' ),
+		'archives'                 => __( 'Portfolio Archives', 'designfly' ),
+		'attributes'               => __( 'Portfolio Attributes', 'designfly' ),
+		'insert_into_item'         => __( 'Insert into portfolio', 'designfly' ),
+		'filter_items_list'        => __( 'Filter portfolio list', 'designfly' ),
+		'items_list'               => __( 'Portfolios list', 'designfly' ),
+	);
+		
+
+	$args = array(
+		'labels'      => $labels,
+		'description' => __( 'Portfolios', 'designfly' ),
+		'public'      => true,
+		'menu_icon'   => 'dashicons-portfolio',
+		'has_archive' => true,
+		'supports'    => array( 'title', 'thumbnail', 'page-attributes' ),
+	);
+
+	register_post_type( 'designfly_portfolio', $args );
+
+	$labels = array(
+		'name'          => _x( 'Portfolio Categories', 'Portfolio Categories', 'designfly' ),
+		'singular_name' => _x( 'Portfolio Category', 'Portfolio Category', 'designfly' ),
+	);
+
+	$args = array(
+		'hierarchical' => false,
+		'labels'       => $labels,
+		'public'       => true,
+		'description'  => __( 'lorem ipsum dolor si amet...', 'designfly' ),
+	);
+
+	register_taxonomy( 'designfly_categories', array( 'designfly_portfolio' ), $args );
+}
+add_action( 'init', 'custom_portfolio_post' );
