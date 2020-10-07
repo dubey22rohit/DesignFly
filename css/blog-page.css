@@ -1,0 +1,520 @@
+@charset "UTF-8";
+div#primary.show-sidebar {
+  width: 100%;
+  margin-top: 3em;
+}
+div#primary.show-sidebar main#main {
+  margin: 0 auto;
+  padding-bottom: 1.8em;
+  width: 65%;
+  border-bottom: 1px solid #62585f;
+}
+div#primary.show-sidebar main#main div.blog-content {
+  display: grid;
+  grid-template-columns: 620px 270px;
+  grid-column-gap: 45px;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.main-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #62585f;
+  font-family: "Open sans";
+  margin-bottom: 1.5em;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.main-title span.title {
+  font-weight: lighter;
+  font-size: 45px;
+  color: #62585f;
+  text-shadow: 2px 2px #fff;
+  padding-bottom: 0.15em;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid {
+  display: grid;
+  grid-template-columns: 620px;
+  grid-row-gap: 4em;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article {
+  overflow: auto;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article a.post-link {
+  text-decoration: none;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article a.post-link:hover header.entry-header {
+  background-color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article header.entry-header {
+  width: 100%;
+  height: auto;
+  background-color: #222;
+  display: flex;
+  font-family: "Open sans";
+  font-weight: normal;
+  color: #fff;
+  border-radius: 3px;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article header.entry-header .entry-title {
+  width: 100%;
+  margin: 0;
+  font-size: 20px;
+  padding: 0.55em 1em;
+  overflow: auto;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article header.entry-header span.entry-meta {
+  margin: 0;
+  padding: 0.4em 0.9em;
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+  width: fit-content;
+  height: auto;
+  line-height: 1;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article header.entry-header span.entry-meta span.post-day {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  height: 25px;
+  display: block;
+  line-height: 1;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article header.entry-header span.entry-meta span.post-month {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  height: 14px;
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  top: -0.25em;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content {
+  margin-top: 1em;
+  display: flex;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content img.post-thumbnail {
+  height: 153px;
+  width: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 1em;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block {
+  font-family: "Open sans";
+  font-weight: normal;
+  font-size: 14px;
+  color: #62585f;
+  overflow: auto;
+  width: 100%;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-content-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.35em;
+  font-size: 12px;
+  border-bottom: 1px solid #62585f;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-content-header span.author {
+  overflow: auto;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-content-header span.author a {
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-content-header span.number-of-comments {
+  overflow: auto;
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-text {
+  overflow: auto;
+  line-height: 21px;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-text p {
+  margin: 0;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-text p a.read-more {
+  color: #ef4634;
+  margin-top: 1em;
+  display: block;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content {
+  font-family: "Open sans";
+  color: #62585f;
+  font-weight: normal;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content article header.entry-header span.entry-title {
+  font-size: 35px;
+  text-shadow: 2px 2px #fff;
+  margin-bottom: 0.4em;
+  display: block;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content article header.entry-header div.entry-header-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.35em;
+  font-size: 12px;
+  border-bottom: 1px solid #62585f;
+  margin-bottom: 1em;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content article header.entry-header div.entry-header-meta span.author {
+  overflow: auto;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content article header.entry-header div.entry-header-meta span.author a {
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content article header.entry-header div.entry-header-meta span.number-of-comments {
+  overflow: auto;
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content article div.entry-content {
+  font-size: 14px;
+  line-height: 21px;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content article div.entry-content img {
+  width: 620px;
+  border-radius: 3px;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content article div.entry-footer {
+  font-size: 13px;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content article div.entry-footer a {
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments {
+  margin-top: 1.5em;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments span.comments-title {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  font-size: 18px;
+  border-top: 1px solid #62585f;
+  border-bottom: 1px solid #62585f;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1em;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body {
+  padding: 1em 0.5em;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body span.dashicons {
+  float: left;
+  margin-top: 0.1em;
+  opacity: 0.4;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body div.comment-block {
+  margin-left: 1.5em;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body div.comment-block footer.comment-meta {
+  font-size: 13px;
+  margin-bottom: 0.4em;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body div.comment-block footer.comment-meta span.comment-author {
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body div.comment-block footer.comment-meta span.comment-author a {
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body div.comment-block footer.comment-meta .comment-awaiting-moderation {
+  display: block;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body div.comment-block div.comment-content {
+  font-size: 14px;
+  line-height: 21px;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body div.comment-block div.comment-content p:last-child {
+  margin-bottom: 0;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body div.comment-block div.reply {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body div.comment-block div.reply i {
+  font-size: 12px;
+  opacity: 0.4;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment article.comment-body div.comment-block div.reply a {
+  color: #62585f;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list li.comment.current-comment {
+  background-color: #fff;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list ul.children {
+  list-style: none;
+  padding-left: 1em;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments ul.comment-list ul.children article.comment-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond {
+  padding-top: 1em;
+  border-top: 1px solid #62585f;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond #reply-title > small {
+  float: right;
+  font-size: 13px;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond #reply-title > small a {
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond .comment-reply-title {
+  font-weight: normal;
+  font-size: 18px;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond form#commentform p.comment-form-comment label {
+  display: none;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond form#commentform p.comment-form-comment textarea {
+  width: 620px;
+  height: 90px;
+  border: 1px solid #62585f;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond form#commentform div.comment-meta-fields {
+  display: flex;
+  justify-content: space-between;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond form#commentform div.comment-meta-fields p {
+  width: 31.4%;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond form#commentform div.comment-meta-fields label {
+  font-size: 14px;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond form#commentform div.comment-meta-fields input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #62585f;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond form#commentform p.form-submit {
+  text-align: right;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content div#comments div#respond form#commentform p.form-submit input#submit {
+  font-size: 14px;
+  color: #fff;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 1;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area {
+  display: flex;
+  flex-flow: column;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area section.widget_designfly_facebook_widget {
+  background-color: #fff;
+  border: 1px solid #62585f;
+  border-top: none;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area section.widget_designfly_facebook_widget .widget-title {
+  background-color: #4267b2;
+  text-shadow: none;
+  color: #fff;
+  padding: 0.7em 0.5em;
+  font-size: 13px;
+  font-weight: normal;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget {
+  overflow: auto;
+  margin-bottom: 2.9em;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget .widget-title {
+  font-family: "Open sans";
+  font-weight: normal;
+  font-size: 25px;
+  color: #62585f;
+  text-shadow: 2px 2px #fff;
+  border-bottom: 1px solid #62585f;
+  padding-bottom: 0.25em;
+  overflow: auto;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget:last-child {
+  margin-bottom: 0;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.portfolio-widget-block {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px;
+  grid-gap: 10px;
+  margin-top: 1em;
+  overflow: auto;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.portfolio-widget-block img {
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.designfly-posts-widget-block {
+  display: grid;
+  grid-template-columns: 270px;
+  grid-row-gap: 10px;
+  font-family: "Open sans";
+  font-weight: normal;
+  color: #62585f;
+  margin-top: 1em;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.designfly-posts-widget-block div.widget-post-block {
+  display: flex;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.designfly-posts-widget-block div.widget-post-block img {
+  height: 45px;
+  width: 45px;
+  border-radius: 3px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.designfly-posts-widget-block div.widget-post-block div.widget-post-details {
+  position: relative;
+  top: -0.3em;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.designfly-posts-widget-block div.widget-post-block div.widget-post-details span.post-title {
+  font-size: 14px;
+  display: block;
+  overflow: auto;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.designfly-posts-widget-block div.widget-post-block div.widget-post-details span.post-title a.post-title-link {
+  color: #62585f;
+  text-decoration: none;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.designfly-posts-widget-block div.widget-post-block div.widget-post-details span.post-title a.post-title-link:hover {
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.designfly-posts-widget-block div.widget-post-block div.widget-post-details span.post-meta {
+  font-size: 12px;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.designfly-posts-widget-block div.widget-post-block div.widget-post-details span.post-meta span.author {
+  overflow: auto;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area div.designfly-posts-widget-block div.widget-post-block div.widget-post-details span.post-meta span.author a {
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget {
+  font-family: "Open sans";
+  color: #62585f;
+  font-weight: normal;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget .widget-title {
+  display: flex;
+  justify-content: space-between;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget .widget-title button.twitter-follow-button {
+  text-shadow: none;
+  color: initial;
+  padding: 0.2em 0.5em;
+  font-size: 13px;
+  position: relative;
+  top: -3px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget .widget-title button.twitter-follow-button span.dashicons {
+  color: #1da1f2;
+  line-height: unset;
+  vertical-align: sub;
+  font-size: 15px;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget div.designfly-tweet-block div.designfly-tweet-block-header {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.5em;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget div.designfly-tweet-block div.designfly-tweet-block-header > img {
+  margin-right: 0.5em;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget div.designfly-tweet-block div.designfly-tweet-block-header div.designfly-tweet-header-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget div.designfly-tweet-block div.designfly-tweet-block-header div.designfly-tweet-header-block div.designfly-tweet-name-handle {
+  display: grid;
+  grid-template-columns: auto;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget div.designfly-tweet-block div.designfly-tweet-block-header div.designfly-tweet-header-block div.designfly-tweet-name-handle span.designfly-tweet-name {
+  font-size: 14px;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget div.designfly-tweet-block div.designfly-tweet-block-header div.designfly-tweet-header-block div.designfly-tweet-name-handle span.designfly-tweet-handle {
+  font-size: 13px;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget div.designfly-tweet-block div.designfly-tweet-block-header div.designfly-tweet-header-block div.designfly-tweet-name-handle span.designfly-tweet-handle a {
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget div.designfly-tweet-block div.designfly-tweet-block-header div.designfly-tweet-header-block span.designfly-tweet-time {
+  font-size: 14px;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_designfly_twitter_widget div.designfly-tweet-block p.designfly-tweet-text {
+  font-size: 13px;
+  line-height: 19.5px;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_archive {
+  height: 10em;
+  overflow: auto;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_archive ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 0.7em;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_archive ul li::before {
+  content: "›";
+  font-size: 13px;
+  margin-right: 0.3em;
+  font-weight: 600;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_archive ul li {
+  padding: 0;
+  margin: 0;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_archive ul li a {
+  font-weight: 600;
+  font-size: 13px;
+  color: #62585f;
+  text-decoration: none;
+}
+div#primary.show-sidebar main#main div.blog-content aside.widget-area .widget_archive ul li:hover a {
+  color: #ef4634;
+}
+div#primary.show-sidebar main#main nav.pagination {
+  width: 100%;
+  margin-top: 1.8em;
+}
+div#primary.show-sidebar main#main nav.pagination div.nav-links {
+  width: auto;
+  margin: 0 auto;
+}
+div#primary.show-sidebar main#main nav.pagination div.nav-links * {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 0.1em;
+}
+div#primary.show-sidebar main#main nav.pagination div.nav-links a {
+  font-family: "Open sans";
+  font-weight: 600;
+  font-size: 16px;
+  color: #222;
+  text-decoration: none;
+}
+div#primary.show-sidebar main#main nav.pagination div.nav-links span.current {
+  font-family: "Open sans";
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ef4634;
+  border-radius: 3px;
+}
+div#primary.show-sidebar main#main nav.pagination div.nav-links a:hover {
+  color: #fff;
+  background-color: #ef4634;
+  border-radius: 3px;
+}
+
+/*# sourceMappingURL=blog-page.css.map */

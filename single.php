@@ -8,33 +8,41 @@
  */
 
 get_header();
+get_template_part( 'template-parts/content', 'portfolio-tax' );
 ?>
-
-	<main id="primary" class="site-main">
-
+<div id="primary" class="content-area show-sidebar">
+		<main id="main" class="site-main">
 		<?php
-		while ( have_posts() ) :
-			the_post();
+			if ( have_posts() ) :
 
-			get_template_part( 'template-parts/content', get_post_type() );
+				?>
+				<div class="blog-content">
+					<div class="single-post-content">
+						<?php
+						while ( have_posts() ){
+							the_post();
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'designfly' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'designfly' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
+							get_template_part( 'template-parts/content', get_post_type() );
+							if ( comments_open() || get_comments_number() ) :
+								comments_template();
+							endif;
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
+						}
+						?>
+					</div>
+					<?php get_sidebar(); ?>
+				</div>
+				<?php
+
+			else :
+
+				get_template_part( 'template-parts/content', 'none' );
+
 			endif;
+			?>
 
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
-
+		</main><!-- #main -->
+	</div><!-- #primary -->
 <?php
 get_sidebar();
 get_footer();
