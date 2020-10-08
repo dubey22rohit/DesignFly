@@ -121,6 +121,7 @@ add_action( 'after_setup_theme', 'designfly_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
+require get_template_directory() . '/inc/widgets/designfly-portfolio-widget.php';
 function designfly_widgets_init() {
 	register_sidebar(
 		array(
@@ -133,8 +134,10 @@ function designfly_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+	register_widget( 'DESIGNfly_Portfolio_Widget' );
 }
 add_action( 'widgets_init', 'designfly_widgets_init' );
+
 
 /**
  * Enqueue scripts and styles.
@@ -234,11 +237,6 @@ function designfly_post_comments( $comment, $args, $depth ) {
 	$tag = ( 'div' === $args['style'] ) ? 'div' : 'li';
 
 	$commenter = wp_get_current_commenter();
-	// if ( $commenter['comment_author_email'] ) {
-	// 	$moderation_note = esc_html__( 'Your comment is awaiting moderation.', 'designfly' );
-	// } else {
-	// 	$moderation_note = esc_html__( 'Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.', 'designfly' );
-	// }
 	?>
 	<<?php echo $tag;?> id="comment-<?php comment_ID(); ?>" <?php comment_class( '', $comment ); ?>>
 		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
@@ -286,4 +284,8 @@ function designfly_post_comments( $comment, $args, $depth ) {
 			</div>
 		</article>
 	<?php
+	
+
+	
+	
 }
