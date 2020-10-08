@@ -6,12 +6,12 @@
     width: 100%;
     display: table;
   
-    .header-wrap {
+    .site-header-middle {
       display: table-cell;
       vertical-align: middle;
     }
   
-    .header-content {
+    .site-header-content {
       width: vars.$content-width;
       display: flex;
       justify-content: space-between;
@@ -21,6 +21,33 @@
     .site-navigation-search {
       display: flex;
       justify-content: space-between;
+    }
+  }
+  #site-navigation {
+    &:first-child {
+      padding-top: 20px;
+    }
+  
+    a,
+    a:visited {
+      color: #222;
+      font-family: vars.$font-family;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    li {
+      margin-left: 3px;
+    }
+  
+    li.current-menu-item,
+    li:hover {
+      background-color: #ef4634;
+      border-radius: 3px;
+  
+      a {
+        color: #fff;
+      }
     }
   }
   .main-navigation ul {

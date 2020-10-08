@@ -227,3 +227,63 @@ function custom_portfolio_post(){
 	register_taxonomy( 'designfly_categories', array( 'designfly_portfolio' ), $args );
 }
 add_action( 'init', 'custom_portfolio_post' );
+
+//Comments
+function designfly_post_comments( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment; 
+	$tag = ( 'div' === $args['style'] ) ? 'div' : 'li';
+
+	$commenter = wp_get_current_commenter();
+	// if ( $commenter['comment_author_email'] ) {
+	// 	$moderation_note = esc_html__( 'Your comment is awaiting moderation.', 'designfly' );
+	// } else {
+	// 	$moderation_note = esc_html__( 'Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved.', 'designfly' );
+	// }
+	?>
+	<<?php echo $tag;?> id="comment-<?php comment_ID(); ?>" <?php comment_class( '', $comment ); ?>>
+		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
+			<span class="dashicons dashicons-testimonial"></span>
+			<div class="comment-block">
+				<footer class="comment-meta">
+					<?php
+					$author_link = '';
+					if ( empty( $comment->comment_author_url ) && ! empty( $comment->user_id ) ) {
+						$author_link = '<a href="' . esc_url( get_author_posts_url( $comment->user_id ) ) . '">' . esc_html( get_the_author_meta( 'display_name', $comment->user_id ) ) . '</a>';
+					} else {
+						$author_link = get_comment_author_link( $comment );
+					}
+
+					$author_html  = '<span class="comment-author">' . $author_link . '</span>';
+					$said_on_html = ' <span class="said-on">' . esc_html_x( 'said on', 'designfly comment said on', 'designfly' ) . '</span> ';
+					$comment_date = get_comment_date( 'F d, Y', $comment ) . ' ' . esc_html_x( 'at', 'designfly comment at', 'designfly' ) . ' ' . get_comment_date( 'H:i a', $comment );
+
+					echo $author_html . $said_on_html . $comment_date;
+					if ( '0' == $comment->comment_approved ) { 
+						?>
+						<em class="comment-awaiting-moderation"><?php echo $moderation_note;?></em>
+					<?php }?>
+				</footer>
+
+				<div class="comment-content">
+					<?php comment_text(); ?>
+				</div>
+
+				<?php
+				comment_reply_link(
+					array_merge(
+						$args,
+						array(
+							'reply_text' => esc_html_x( 'reply', 'comment reply', 'designfly' ),
+							'add_below'  => 'div-comment',
+							'depth'      => $depth,
+							'max_depth'  => $args['max_depth'],
+							'before'     => '<div class="reply"><i class="fas fa-share"></i> ',
+							'after'      => '</div>',
+						)
+					)
+				);
+				?>
+			</div>
+		</article>
+	<?php
+}
