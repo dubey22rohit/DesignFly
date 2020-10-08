@@ -267,6 +267,64 @@ div#portfolio-modal {
   }
 }
 
+div.portfolio-taxonomy {
+  background-image: url('../images/features-repeatable-bg.png');
+  height: 101px;
+  width: 100%;
+  display: table;
+
+  div.portfolio-taxonomy-middle {
+    display: table-cell;
+    vertical-align: middle;
+
+    div.portfolio-taxonomy-content {
+      width: vars.$content-width;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+
+      div.portfolio-taxonomy-block {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          position: relative;
+          top: 15%;
+          height: 50px;
+          margin-right: 1em;
+        }
+
+        div.portfolio-taxonomy-details {
+          a {
+            text-decoration: none;
+
+            span.portfolio-taxonomy-title {
+              font-family: vars.$font-family;
+              font-weight: bold;
+              font-size: 20px;
+              color: #ef4634;
+              text-shadow: 2px 2px #fff;
+            }
+          }
+
+          span.portfolio-taxonomy-title:hover {
+            color: #222;
+          }
+
+          p.portfolio-taxonomy-description {
+            margin: 0;
+            font-family: vars.$font-family;
+            font-weight: normal;
+            font-size: 13px;
+            color: #333;
+            line-height: 19.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @-webkit-keyframes zoom {
   from { -webkit-transform: scale(0); }
   to { -webkit-transform: scale(1); }
