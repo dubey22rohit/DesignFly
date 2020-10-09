@@ -6,4 +6,4 @@
 			<?php echo esc_html__( 'View image', 'designfly' ); ?>
 		</div>
 	</div>
-</div><?php the_ID(); ?>
+</div>

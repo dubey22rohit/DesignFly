@@ -286,8 +286,4 @@ function designfly_post_comments( $comment, $args, $depth ) {
 			</div>
 		</article>
 	<?php
-	
-
-	
-	
 }

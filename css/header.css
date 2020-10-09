@@ -58,4 +58,20 @@
   text-decoration: none;
 }
 
+#search-field {
+  padding-top: 25px;
+  padding-left: 10px;
+}
+#search-field .search-input {
+  width: 150px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #62585f;
+  border-radius: 3px;
+}
+#search-field .search-submit {
+  position: relative;
+  top: 4px;
+}
+
 /*# sourceMappingURL=header.css.map */
