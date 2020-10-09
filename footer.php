@@ -35,8 +35,11 @@
 				
 			</div>
 		</div>
+		<div class = "rtcamp-copyright">
+		<span><?php echo esc_html__("© 2020-DESIGNFly| Designed by ",'designfly')?><a  class="copyright-link" target="_blank" href="<?php echo esc_url( 'https://rtcamp.com/' );?>">rtCamp</a></span>
+		</div>
 	</footer>
-</div>
+
 
 <?php wp_footer(); ?>
 

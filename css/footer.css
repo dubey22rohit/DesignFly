@@ -32,7 +32,7 @@ footer.site-footer div.site-info div.site-footer-text a.read-more {
 footer.site-footer div.site-info div.contact-detail {
   margin-left: 10%;
 }
-footer.site-footer div.copyright-div {
+footer.site-footer div.rtcamp-copyright {
   margin: 1em 0;
   font-family: "Open sans";
   font-weight: normal;
@@ -41,7 +41,7 @@ footer.site-footer div.copyright-div {
   width: 100%;
   text-align: center;
 }
-footer.site-footer div.copyright-div a.copyright-rtcamp {
+footer.site-footer div.rtcamp-copyright a.copyright-link {
   color: #ef4634;
 }
 footer.site-footer .social-links {
