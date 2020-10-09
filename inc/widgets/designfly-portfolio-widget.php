@@ -3,7 +3,7 @@ class DESIGNfly_Portfolio_Widget extends WP_Widget {
 	private $default_num = 8;
     public function __construct() {
 		parent::__construct(
-			'DESIGNfly_Portfolio_Widget', 
+			'Designfly_Portfolio_Widget', 
 			esc_html__( 'DesignFly Custom Portfolios', 'designfly' ),
 			array( 'description' => esc_html__( 'Shows Portfolio Images', 'designfly' ) )
 		);

@@ -122,6 +122,7 @@ add_action( 'after_setup_theme', 'designfly_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 require get_template_directory() . '/inc/widgets/designfly-portfolio-widget.php';
+require get_template_directory() . '/inc/widgets/designfly-posts-widget.php';
 function designfly_widgets_init() {
 	register_sidebar(
 		array(
@@ -134,7 +135,8 @@ function designfly_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
-	register_widget( 'DESIGNfly_Portfolio_Widget' );
+	register_widget( 'Designfly_Portfolio_Widget' );
+	register_widget( 'Designfly_Posts_Widget' );
 }
 add_action( 'widgets_init', 'designfly_widgets_init' );
 
