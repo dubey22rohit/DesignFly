@@ -19,20 +19,20 @@ class DESIGNfly_Portfolio_Widget extends WP_Widget {
 			)
 		);
 		//FrontEnd
-		if ( ! empty( $posts ) ){
+		if ( ! empty( $posts ) ) {
 
-			echo $args['before_widget']; 
+			echo $args['before_widget'];// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
 			if ( ! empty( $inst['title'] ) ) {
-				echo $args['before_title'] . apply_filters( 'widget_title', $inst['title'] ) . $args['after_title']; 
+				echo $args['before_title'] . apply_filters( 'widget_title', $inst['title'] ) . $args['after_title']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 			echo '<div class="portfolio-widget-block">'; 
 
 			foreach ( $posts as $post ) {
-				echo '<img src="' . get_the_post_thumbnail_url( $post ) . '">'; 
+				echo '<img src="' . get_the_post_thumbnail_url( $post ) . '">'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 
 			echo '</div>'; 
-			echo $args['after_widget']; 
+			echo $args['after_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 		}
 	}

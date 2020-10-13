@@ -44,7 +44,7 @@ get_header();
 
 							<?php
 							
-							$designfly_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'designfly' ), convert_smilies( ':)' ) ) . '</p>';
+							$designfly_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'designfly' ), convert_smilies( ':)' ) ) . '</p>';//phpcs:ignore
 							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$designfly_archive_content" );
 							the_widget( 'WP_Widget_Tag_Cloud' );
 							?>
