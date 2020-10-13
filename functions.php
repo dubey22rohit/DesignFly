@@ -188,7 +188,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-function custom_portfolio_post(){
+function custom_portfolio_post() {
 	$labels = array(
 		'name'                     => _x( 'Portfolios', 'Post Type General Name', 'designfly' ),
 		'singular_name'            => _x( 'Portfolio', 'Post Type Sigular Name', 'designfly' ),
@@ -249,6 +249,7 @@ function designfly_excerpt_more( $more ) {
 
 	return $more;
 }
+add_filter( 'excerpt_more', 'designfly_excerpt_more' );
 function designfly_excerpt_length( $length ) {
 	if ( ! is_single() ) {
 		return 35;
@@ -259,12 +260,12 @@ function designfly_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'designfly_excerpt_length' );
 //Comments
 function designfly_post_comments( $comment, $args, $depth ) {
-	$GLOBALS['comment'] = $comment; 
+	$GLOBALS['comment'] = $comment;// phpcs:ignore
 	$tag = ( 'div' === $args['style'] ) ? 'div' : 'li';
 
 	$commenter = wp_get_current_commenter();
 	?>
-	<<?php echo $tag;?> id="comment-<?php comment_ID(); ?>" <?php comment_class( '', $comment ); ?>>
+	<<?php echo $tag;// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped?> id="comment-<?php comment_ID(); ?>" <?php comment_class( '', $comment ); ?>>
 		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
 			<span class="dashicons dashicons-testimonial"></span>
 			<div class="comment-block">
@@ -281,10 +282,10 @@ function designfly_post_comments( $comment, $args, $depth ) {
 					$said_on_html = ' <span class="said-on">' . esc_html_x( 'said on', 'designfly comment said on', 'designfly' ) . '</span> ';
 					$comment_date = get_comment_date( 'F d, Y', $comment ) . ' ' . esc_html_x( 'at', 'designfly comment at', 'designfly' ) . ' ' . get_comment_date( 'H:i a', $comment );
 
-					echo $author_html . $said_on_html . $comment_date;
-					if ( '0' == $comment->comment_approved ) { 
+					echo $author_html . $said_on_html . $comment_date;// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					if ( '0' == $comment->comment_approved /*phpcs:ignore*/) { 
 						?>
-						<em class="comment-awaiting-moderation"><?php echo $moderation_note;?></em>
+						<em class="comment-awaiting-moderation"><?php echo $moderation_note;// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped?></em>
 					<?php }?>
 				</footer>
 
