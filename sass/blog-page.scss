@@ -565,6 +565,9 @@ div#primary.show-sidebar {
         margin-top: 1.8em;
   
         div.nav-links {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: auto;
           margin: 0 auto;
   

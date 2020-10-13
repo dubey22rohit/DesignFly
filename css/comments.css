@@ -1,17 +1,121 @@
-/* Error: There is no module with the namespace "vars".
- *    ,
- * 10 |               border-top: vars.$border;
- *    |                           ^^^^^^^^^^^^
- *    '
- *   sass\comments.scss 10:27  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: There is no module with the namespace "vars".\a    \2577 \a 10 \2502                border-top: vars.$border;\d\a    \2502                            ^^^^^^^^^^^^\a    \2575 \a   sass\\comments.scss 10:27  root stylesheet';
+div#comments {
+  margin-top: 1.5em;
 }
+div#comments span.comments-title {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  font-size: 18px;
+  border-top: 1px solid #62585f;
+  border-bottom: 1px solid #62585f;
+}
+div#comments ul.comment-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1em;
+}
+div#comments ul.comment-list li.comment article.comment-body {
+  padding: 1em 0.5em;
+}
+div#comments ul.comment-list li.comment article.comment-body span.dashicons {
+  float: left;
+  margin-top: 0.1em;
+  opacity: 0.4;
+}
+div#comments ul.comment-list li.comment article.comment-body div.comment-block {
+  margin-left: 1.5em;
+}
+div#comments ul.comment-list li.comment article.comment-body div.comment-block footer.comment-meta {
+  font-size: 13px;
+  margin-bottom: 0.4em;
+}
+div#comments ul.comment-list li.comment article.comment-body div.comment-block footer.comment-meta span.comment-author {
+  color: #ef4634;
+}
+div#comments ul.comment-list li.comment article.comment-body div.comment-block footer.comment-meta span.comment-author a {
+  color: #ef4634;
+}
+div#comments ul.comment-list li.comment article.comment-body div.comment-block footer.comment-meta .comment-awaiting-moderation {
+  display: block;
+}
+div#comments ul.comment-list li.comment article.comment-body div.comment-block div.comment-content {
+  font-size: 14px;
+  line-height: 21px;
+}
+div#comments ul.comment-list li.comment article.comment-body div.comment-block div.comment-content p:last-child {
+  margin-bottom: 0;
+}
+div#comments ul.comment-list li.comment article.comment-body div.comment-block div.reply {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+}
+div#comments ul.comment-list li.comment article.comment-body div.comment-block div.reply i {
+  font-size: 12px;
+  opacity: 0.4;
+}
+div#comments ul.comment-list li.comment article.comment-body div.comment-block div.reply a {
+  color: #62585f;
+}
+div#comments ul.comment-list li.comment.current-comment {
+  background-color: #fff;
+}
+div#comments ul.comment-list ul.children {
+  list-style: none;
+  padding-left: 1em;
+}
+div#comments ul.comment-list ul.children article.comment-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+div#comments div#respond {
+  padding-top: 1em;
+  border-top: 1px solid #62585f;
+}
+div#comments div#respond #reply-title > small {
+  float: right;
+  font-size: 13px;
+}
+div#comments div#respond #reply-title > small a {
+  color: #ef4634;
+}
+div#comments div#respond .comment-reply-title {
+  font-weight: normal;
+  font-size: 18px;
+}
+div#comments div#respond form#commentform p.comment-form-comment label {
+  display: none;
+}
+div#comments div#respond form#commentform p.comment-form-comment textarea {
+  width: 620px;
+  height: 90px;
+  border: 1px solid #62585f;
+}
+div#comments div#respond form#commentform div.comment-meta-fields {
+  display: flex;
+  justify-content: space-between;
+}
+div#comments div#respond form#commentform div.comment-meta-fields p {
+  width: 31.4%;
+}
+div#comments div#respond form#commentform div.comment-meta-fields label {
+  font-size: 14px;
+}
+div#comments div#respond form#commentform div.comment-meta-fields input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #62585f;
+}
+div#comments div#respond form#commentform p.form-submit {
+  text-align: right;
+}
+div#comments div#respond form#commentform p.form-submit input#submit {
+  font-size: 14px;
+  color: #fff;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+/*# sourceMappingURL=comments.css.map */

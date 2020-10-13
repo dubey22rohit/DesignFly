@@ -485,6 +485,9 @@ div#primary.show-sidebar main#main nav.pagination {
   margin-top: 1.8em;
 }
 div#primary.show-sidebar main#main nav.pagination div.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: auto;
   margin: 0 auto;
 }

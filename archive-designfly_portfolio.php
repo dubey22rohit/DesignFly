@@ -50,8 +50,8 @@ get_template_part( 'template-parts/content', 'portfolio-tax' );
 					the_posts_pagination(
 						array(
 							'screen_reader_text' => ' ',
-							'next_text'          => '<img src="' . get_template_directory_uri() . '/img/caret-right-solid.svg">',
-							'prev_text'          => '<img src="' . get_template_directory_uri() . '/img/caret-left-solid.svg">',
+							'next_text'          => '<img src="' . get_template_directory_uri() . '/images/right-arrow.svg">',
+							'prev_text'          => '<img src="' . get_template_directory_uri() . '/images/left-arrow.svg">',
 						)
 					);
 

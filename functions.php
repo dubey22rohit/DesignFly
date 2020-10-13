@@ -237,6 +237,26 @@ function custom_portfolio_post(){
 }
 add_action( 'init', 'custom_portfolio_post' );
 
+//Read More
+function designfly_excerpt_more( $more ) {
+	if ( ! is_single() ) {
+		$more = sprintf(
+			'<a class="read-more" href="%1$s">%2$s</a>',
+			get_permalink( get_the_ID() ),
+			esc_html__( 'READ MORE', 'designfly' )
+		);
+	}
+
+	return $more;
+}
+function designfly_excerpt_length( $length ) {
+	if ( ! is_single() ) {
+		return 35;
+	}
+
+	return $length;
+}
+add_filter( 'excerpt_length', 'designfly_excerpt_length' );
 //Comments
 function designfly_post_comments( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment; 
