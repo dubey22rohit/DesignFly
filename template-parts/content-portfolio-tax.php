@@ -10,7 +10,7 @@
 				)
 			);
 
-			foreach ( $terms as $term ) {
+			foreach ( $terms as $term ) {//phpcs:ignore
 				?>
 				<div class="portfolio-taxonomy-block">
 						<img src="<?php echo esc_url( get_template_directory_uri() . '/images/taxonomy-icons/' ) . esc_html( $term->slug ) . '.png'; ?>">
