@@ -13,12 +13,18 @@ This theme is internationalized and follows CSS, JavaScript and PHP coding stand
 It uses WordPress phpcs, ESLint and Stylelint.
 
 # Installing
-Download the zip of this repository.
+Download the zip of this repository. 
+
 Goto admin section of your site(wp-admin)
+
 Click on Appearance -> Themes.
+
 Click on Add New and then Upload the Theme.
+
 Upload the downloaded repository here(In zip format).
+
 After uploading, activate the theme from themes page.
+
 
 # Usage Guidelines
 It will add Portfolios menu in wp-admin. From here you can manage portfolio posts.
@@ -38,18 +44,27 @@ This widget is used to show posts recent,related or popular posts
 ## Type of Posts:
 
 Related (to current post) Posts: Shows related posts to current post. Only applicable to Single post page.
+
 Recent Posts: Shows most recent posts.
+
 Popular Posts: Shows most viewed posts.
+
 You can also specify title and number of items to show.
 
 # DesignFly Facebook Widget
 This widget is used to show a particular Facebook page.
+
 You can specify title and Facebook Application ID and Facebook Page Url.
+
 The page url must be a valid url.
 
 # DesignFly Twitter Widget
 This widget is used to show the tweets from the chosen profile
+
 You can specify title and number of tweets to show.
+
 This theme adds a settings page named DesignFly Twitter from where you can configure your twitter account.
+
 You can either manually set all settings field if you want to use custom Twitter Application. Or you can click on Log in to Twitter and get Access Token and Secret button to get Access Token, Token Secret and Screen Name.
+
 If you click on this button, the default consumer key and secret will be used. Also, it will overwrite existing access token and token secret.
