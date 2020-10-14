@@ -193,6 +193,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+add_filter( 'if_menu_conditions', 'wpb_new_menu_conditions' );
+
 function custom_portfolio_post() {
 	$labels = array(
 		'name'                     => _x( 'Portfolios', 'Post Type General Name', 'designfly' ),

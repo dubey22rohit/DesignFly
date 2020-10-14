@@ -40,6 +40,15 @@
 #site-navigation li:hover a {
   color: #fff;
 }
+#site-navigation li.current-menu-item,
+#site-navigation li:active {
+  background-color: #ef4634;
+  border-radius: 3px;
+}
+#site-navigation li.current-menu-item a,
+#site-navigation li:active a {
+  color: #fff;
+}
 
 .main-navigation ul {
   list-style: none;
