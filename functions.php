@@ -123,6 +123,8 @@ add_action( 'after_setup_theme', 'designfly_content_width', 0 );
  */
 require get_template_directory() . '/inc/widgets/designfly-portfolio-widget.php';
 require get_template_directory() . '/inc/widgets/designfly-posts-widget.php';
+require get_template_directory() . '/inc/widgets/designfly-twitter-widget.php';
+require get_template_directory() . '/inc/widgets/designfly-facebook-widget.php';
 function designfly_widgets_init() {
 	register_sidebar(
 		array(
@@ -137,10 +139,13 @@ function designfly_widgets_init() {
 	);
 	register_widget( 'Designfly_Portfolio_Widget' );
 	register_widget( 'Designfly_Posts_Widget' );
+	register_widget( 'DESIGNfly_Twitter_Widget' );
+	register_widget( 'DESIGNfly_Facebook_Widget' );
 }
 add_action( 'widgets_init', 'designfly_widgets_init' );
 
-
+require get_template_directory() . '/inc/designfly-twitter-config.php';
+new DESIGNfly_Twitter_Configuration();
 /**
  * Enqueue scripts and styles.
  */
