@@ -6,21 +6,21 @@ get_header();
  
  <div class="carousel-inner" >
    <div class="carousel-item active">
-	 <img src="<?php echo get_template_directory_uri();?>/images/slider-image.png"  >
+	 <img src="<?php echo esc_url(get_template_directory_uri());?>/images/slider-image.png"  >
 	 <div class="carousel-caption d-none d-md-block">
 	   <p class = 'slide_label'><?php echo esc_html__( 'Gearing up the ideas', 'designfly' ); ?></p>
 	   <p class = 'slide_text'><?php echo esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', 'designfly' ); ?></p>
 	 </div>
    </div>
    <div class="carousel-item">
-	 <img src="<?php echo get_template_directory_uri()?>/images/slider-image.png" >
+	 <img src="<?php echo esc_url(get_template_directory_uri())?>/images/slider-image.png" >
 	 <div class="carousel-caption d-none d-md-block">
 	 <p class = 'slide_label'><?php echo esc_html__( 'Gearing up the ideas', 'designfly' ); ?></p>
 	 <p class = 'slide_text'><?php echo esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', 'designfly' ); ?></p>
 	 </div>
    </div>
    <div class="carousel-item">
-	 <img src="<?php echo get_template_directory_uri()?>/images/slider-image.png" >
+	 <img src="<?php echo esc_url(get_template_directory_uri())?>/images/slider-image.png" >
 	 <div class="carousel-caption d-none d-md-block">
 	 <p class = 'slide_label'><?php echo esc_html__( 'Gearing up the ideas', 'designfly' ); ?></p>
 	 <p class = 'slide_text'><?php echo esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', 'designfly' ); ?></p>
@@ -28,10 +28,10 @@ get_header();
    </div>
  </div>
  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-   <span class="sr-only"><img src="<?php echo get_template_directory_uri()?>/images/cropped/white-left-slider-arrow.png" alt=""></span>
+   <span class="sr-only"><img src="<?php echo esc_url(get_template_directory_uri())?>/images/cropped/white-left-slider-arrow.png" alt=""></span>
  </a>
  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-   <span class="sr-only"><img src="<?php echo get_template_directory_uri()?>/images/cropped/white-right-slider-arrow.png" alt=""></span>
+   <span class="sr-only"><img src="<?php echo esc_url(get_template_directory_uri())?>/images/cropped/white-right-slider-arrow.png" alt=""></span>
  </a>
 </div>
 
