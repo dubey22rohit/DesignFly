@@ -34,6 +34,7 @@ div#primary {
         height: 1em;
         text-decoration: none;
       }
+    
 
       div {
         display: grid;
@@ -295,9 +296,9 @@ div.portfolio-taxonomy {
         }
 
         div.portfolio-taxonomy-details {
+
           a {
             text-decoration: none;
-
             span.portfolio-taxonomy-title {
               font-family: vars.$font-family;
               font-weight: bold;
@@ -310,12 +311,15 @@ div.portfolio-taxonomy {
           span.portfolio-taxonomy-title:hover {
             color: #222;
           }
-
+      
           p.portfolio-taxonomy-description {
-            margin: 0;
+            margin: auto;
+            word-wrap: break-word;
             font-family: vars.$font-family;
             font-weight: normal;
             font-size: 13px;
+            width: 250px;
+            height: 50px;
             color: #333;
             line-height: 19.5px;
           }

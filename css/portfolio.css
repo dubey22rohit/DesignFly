@@ -271,10 +271,13 @@ div.portfolio-taxonomy div.portfolio-taxonomy-middle div.portfolio-taxonomy-cont
   color: #222;
 }
 div.portfolio-taxonomy div.portfolio-taxonomy-middle div.portfolio-taxonomy-content div.portfolio-taxonomy-block div.portfolio-taxonomy-details p.portfolio-taxonomy-description {
-  margin: 0;
+  margin: auto;
+  word-wrap: break-word;
   font-family: "Open sans";
   font-weight: normal;
   font-size: 13px;
+  width: 250px;
+  height: 50px;
   color: #333;
   line-height: 19.5px;
 }

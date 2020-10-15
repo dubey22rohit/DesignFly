@@ -5,9 +5,9 @@
 				<div id="portfolio-modal-box-border">
 					<img class="modal-content" id="portfolio-modal-img">
 					<div id="portfolio-modal-caption">
-						<span class="navigation-arrow-left"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cropped/white-left-slider-arrow.svg"></span>
+						<span class="navigation-arrow-left"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/left-arrow.svg"></span>
 						<span id="portfolio-title-span"></span>
-						<span class="navigation-arrow-right"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cropped/white-right-slider-arrow.svg"></span>
+						<span class="navigation-arrow-right"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/right-arrow.svg"></span>
 					</div>
 				</div>
 				<div class="portfolio-close">

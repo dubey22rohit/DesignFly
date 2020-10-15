@@ -9,7 +9,9 @@
 					'number'     => 3,
 				)
 			);
-
+			?>
+			
+			<?php
 			foreach ( $terms as $term ) {//phpcs:ignore
 				?>
 				<div class="portfolio-taxonomy-block">
@@ -18,7 +20,7 @@
 							<a href="<?php echo esc_url( get_term_link( $term, 'designfly_portfolio' ) ); ?>">
 								<span class="portfolio-taxonomy-title"><?php echo esc_html( $term->name ); ?></span>
 							</a>
-							<p class="portfolio-taxonomy-description"><?php echo esc_html( $term->description ); ?></p>
+							<div><p class="portfolio-taxonomy-description"><?php echo esc_html(wp_trim_words( ( $term->description ),10 )); ?></p></div>
 						</div>
 				</div>
 				<?php
