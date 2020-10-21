@@ -71,12 +71,6 @@
   div#primary main#main div.main-title div {
     grid-template-columns: auto !important;
   }
-  div#primary main#main div.main-title div a.portfolio-taxonomy-buttons {
-    font-size: 4vw !important;
-    top: 0 !important;
-    width: auto;
-    text-align: center;
-  }
   div#primary main#main div.portfolio-block div.portfolio-grid .portfolio-item img.portfolio-img {
     height: 100% !important;
     width: 100% !important;

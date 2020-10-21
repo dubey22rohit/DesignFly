@@ -97,12 +97,7 @@
           div {
             grid-template-columns: auto !important;
   
-            a.portfolio-taxonomy-buttons {
-              font-size: 4vw !important;
-              top: 0 !important;
-              width: auto;
-              text-align: center;
-            }
+          
           }
         }
   
@@ -204,10 +199,7 @@
       // height: 20% !important;
   
       & > div.text-block {
-        div {
-          // font-size: 8vw !important;
-        }
-  
+        
         p {
           width: $content-width !important;
         }
@@ -282,9 +274,7 @@
       // height: 20% !important;
   
       & > div.text-block {
-        div {
-          // font-size: 8vw !important;
-        }
+        
   
         p {
           // font-size: 2.5vw !important;

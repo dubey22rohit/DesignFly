@@ -120,6 +120,10 @@ div#primary.show-sidebar main#main div.blog-content div.post-content div.post-gr
 }
 div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-content-header span.author a {
   color: #ef4634;
+  text-decoration: none;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-content-header span.author a:hover {
+  text-decoration: underline;
 }
 div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-content-header span.number-of-comments {
   overflow: auto;
@@ -134,8 +138,12 @@ div#primary.show-sidebar main#main div.blog-content div.post-content div.post-gr
 }
 div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-text p a.read-more {
   color: #ef4634;
+  text-decoration: none;
   margin-top: 1em;
   display: block;
+}
+div#primary.show-sidebar main#main div.blog-content div.post-content div.post-grid article div.entry-content div.post-content-block div.post-text p a.read-more:hover {
+  text-decoration: underline;
 }
 div#primary.show-sidebar main#main div.blog-content div.single-post-content {
   font-family: "Open sans";
@@ -162,6 +170,10 @@ div#primary.show-sidebar main#main div.blog-content div.single-post-content arti
 }
 div#primary.show-sidebar main#main div.blog-content div.single-post-content article header.entry-header div.entry-header-meta span.author a {
   color: #ef4634;
+  text-decoration: none;
+}
+div#primary.show-sidebar main#main div.blog-content div.single-post-content article header.entry-header div.entry-header-meta span.author a:hover {
+  text-decoration: underline;
 }
 div#primary.show-sidebar main#main div.blog-content div.single-post-content article header.entry-header div.entry-header-meta span.number-of-comments {
   overflow: auto;

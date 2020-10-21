@@ -20,7 +20,7 @@ get_template_part( 'template-parts/content', 'portfolio-tax' );
 
 					foreach ( $terms as $term ) { //phpcs:ignore
 						?>
-						<a href="<?php echo esc_url( get_term_link( $term, 'designfly_portfolio' ) ); ?>"><?php echo esc_html( $term->name ); ?></a>
+						<a class="view-all-button" href="<?php echo esc_url( get_term_link( $term, 'designfly_portfolio' ) ); ?>"><?php echo esc_html( $term->name ); ?></a>
 						<?php
 					}
 					?>

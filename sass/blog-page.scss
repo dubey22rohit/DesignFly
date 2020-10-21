@@ -132,8 +132,12 @@ div#primary.show-sidebar {
   
                       a.read-more {
                         color: #ef4634;
+                        text-decoration: none;
                         margin-top: 1em;
                         display: block;
+                      }
+                      a.read-more:hover{
+                        text-decoration: underline;
                       }
                     }
                   }

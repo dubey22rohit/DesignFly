@@ -10,9 +10,14 @@
 
   span.author {
     overflow: auto;
+    
 
     a {
       color: #ef4634;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
     }
   }
 
