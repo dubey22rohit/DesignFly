@@ -68,3 +68,6 @@ This theme adds a settings page named DesignFly Twitter from where you can confi
 You can either manually set all settings field if you want to use custom Twitter Application. Or you can click on Log in to Twitter and get Access Token and Secret button to get Access Token, Token Secret and Screen Name.
 
 If you click on this button, the default consumer key and secret will be used. Also, it will overwrite existing access token and token secret.
+
+# See The Live Version of the Theme here : 
+[Designfly Theme](http://3.6.93.168/)
