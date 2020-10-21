@@ -9,7 +9,7 @@ class DESIGNfly_Facebook_Widget extends WP_Widget {
 	 * Register widget with WordPress.
 	 */
 	public function __construct() {
-		parent::__construct(
+		parent::__construct(//phpcs:ignore
 			'DESIGNfly_Facebook_Widget', 
 			esc_html__( 'DESIGNfly Facebook', 'designfly' ), 
 			array( 'description' => esc_html__( 'A Widget to show Facebook details.', 'designfly' ) )
